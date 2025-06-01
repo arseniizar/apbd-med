@@ -8,11 +8,7 @@
 
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0"/>
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Database\" />
-      <Folder Include="Service\Interfaces\" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.5" />
     </ItemGroup>
 
 </Project>
