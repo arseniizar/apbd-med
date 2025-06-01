@@ -32,7 +32,6 @@ public class PrescriptionDbContext : DbContext
             .WithMany(p => p.PrescriptionMedicaments)
             .HasForeignKey(pm => pm.IdPrescription);
 
-        // Seed Data (optional, for testing)
         modelBuilder.Entity<Doctor>().HasData(
             new Doctor { IdDoctor = 1, FirstName = "John", LastName = "Smith", Email = "j.smith@clinic.com" },
             new Doctor { IdDoctor = 2, FirstName = "Alice", LastName = "Wonderland", Email = "a.wonder@clinic.com" }

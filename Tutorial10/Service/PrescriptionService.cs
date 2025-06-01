@@ -72,7 +72,6 @@ public class PrescriptionService : IPrescriptionService
             var medicament = await _prescriptionRepository.GetMedicamentByIdAsync(medDto.IdMedicament);
             if (medicament == null)
             {
-                // This would ideally be part of a transaction that rolls back previous saves
                 throw new KeyNotFoundException($"Medicament with ID {medDto.IdMedicament} not found.");
             }
 
